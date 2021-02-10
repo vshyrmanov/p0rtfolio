@@ -12,7 +12,7 @@ ul {
 a {
     text-decoration: none;
 }
-.main {
+#main {
   width: 100%;
   height: 100vh;  
   position: relative;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 .main-text p{
     color: #747474;
 }
-.portfolio-btn {
+.portfolio-btn, .recent-button {
     width: 190px;
     height: 44px;
     display: flex;
@@ -109,7 +109,7 @@ nav ul li a:hover {
     background-color: #23cdaf;
     transition: all ease 0.2s ;
 }
-/*
+
 #skills {
     display: flex;
     justify-content: space-around;
@@ -129,7 +129,7 @@ nav ul li a:hover {
     height: 100%;
     object-fit: contain;
 }
-/*.skill-heading span {
+.skill-heading span {
     color: #36b7b5;
     font-weight: 500;
     text-transform: uppercase;
@@ -142,4 +142,217 @@ nav ul li a:hover {
     margin: 0px;
     font-weight: 400;
     letter-spacing: 1px ;
+}
+.s-box-container {
+    margin-top: 30px;
+}
+.skill-box {
+    display: flex;
+    margin: 25px 0px;
+}
+.s-box-icon {
+    margin-right: 12px;
+}
+.s-box-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-box-text {
+    color: #1c3548;
+    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: 600 ;
+}
+
+.s-box-text p{
+    color: #747474;
+    font-size: 0.9rem;
+}
+#recent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+
+}
+.recent-heading span {
+    color: #36b7b5;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+}
+.recent-heading h3, #contact h3 {
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.recent-image {
+    margin: 0px 40px;
+}
+.recent-image img {
+    width: 100%;
+    height: 100%;
+}
+.recent-button {
+    width: 190px;
+    margin-top: -20px;
+}
+.recent-button:hover, .contact-input a:hover {
+    background-color: #23cdaf;
+    transition: all ease 0.2s ;
+}
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+#contact img {
+    height: 100px;
+    
+}
+.contact-input {
+    width: 400px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.30);
+}
+.contact-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #242425;
+}
+.contact-input a {
+    width: 200px;
+    height: 35px;
+    background-color: #1db096;
+    color: #ffffff;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+#contact h3 {
+    margin: 20px;
+}
+@media (max-width: 1140px) {
+    .content {
+        width: 100%;
+    }
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+    .main-text, .model {
+        margin: 10px;
+        
+    }
+    .main-text h1 {
+        font-size: 3rem;
+    }
+    .skill-image {
+        width: 400px;
+        height: 400px;
+    }
+   
+    
+}
+@media (max-width: 900px) {
+    nav {
+        justify-content: space-between;
+        height: 65px;
+        padding: 0px 30px;
+
+    }
+    .logo img {
+        height: 35px;
+    }
+    .menu {
+        display: none;
+    }
+    #skills {
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 40px;
+    }
+    .skill-text {
+        width: 400px;
+    }
+    .skill-image {
+        width: 40%;
+        height: 300px;
+    }
+    skill-image img {
+        object-fit: cover;
+        object-position: left;
+    }
+    .recent-heading h3, #contact h3 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .recent-heading{
+        text-align: center;
+        padding: 0px 15px;
+    }
+    #contact img {
+        width: 50%;
+        height: 10%;
+    }
+}
+@media (max-width:720px){
+    .model {
+        display: none;
+    }
+    .main-text {
+        width: 75%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #contact img {
+        height: 200px;
+    }
+    .recent-button {
+        margin: 0px;
+    }
+    #contact img {
+        width: 50%;
+        height: 70%;
+    }
+}
+@media (max-width:530px){
+    .contact-input {
+        width: 90%;
+    }
+    .skill-image {
+        display: none;
+    }
+    .skill-text {
+        width: 85%;
+    }
+    #skills {
+        margin: 0px;
+    }
+    #contact img {
+        width: 40%;
+    }
 }
